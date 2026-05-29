@@ -1,20 +1,19 @@
 {
-  "name": "campusvibe-demo",
-  "private": true,
+  "name": "campusvibe-backend",
   "version": "1.0.0",
-  "type": "module",
+  "description": "CampusVibe 后端 API 服务",
+  "main": "server.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
   },
   "dependencies": {
-    "vue": "^3.4.0",
-    "vue-router": "^4.3.0",
-    "pinia": "^2.1.0"
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "bcryptjs": "^2.4.3",
+    "uuid": "^9.0.1"
   },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.0",
-    "vite": "^5.4.0"
-  }
+  "keywords": ["campus", "social", "api"],
+  "author": "",
+  "license": "MIT"
 }
